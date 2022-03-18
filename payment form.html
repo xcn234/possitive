@@ -1,0 +1,113 @@
+<html>
+<head><meta name="viewport"content ="width=device-width , intial-scale=1.0">
+<style type="text/css">
+*{
+border-sizing:border-box;
+}
+body{
+font-family:Verdana,Arial,sans-serif;
+margin:10px 10px;
+font-size:20 px;
+padding:15px;
+}
+.cointainer{
+background-color:lime;
+padding:5px 20px 15px 20px;
+border:dotted 1.5px ;
+border-radius:8px;
+
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+textarea[type="text"],
+select{
+width:100%;
+padding:10px;
+border:2px solid blue ;
+border-radius:10px;
+margin:10px;
+}
+.heading{
+text-align:center;
+padding:0px 0px 10px 0px;
+}
+input[type="submit"],
+input[type="reset"] {
+background-color:maroon;
+color:white;
+padding:20px 30px;
+border:none;
+width:49%;
+cursor:pointer;
+}
+input[type="reset"]:hover {
+background-color:aqua;
+}
+input[type="submit"]:hover{
+baclground-color:aqua;
+}
+.xl{
+width:90%;
+padding:10px;
+border:2px solid blue ;
+border-radius:10px;
+margin:10px;
+background-color:white;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="cointainer">
+<form>
+<h1 class=" heading"> PAYMENT FORM </h1>
+<h2> USER INFORMATION </h2>
+<div> NAME<input type="text" name="your name" placeholder="enter your name" required>
+ </div>
+<p >
+GENDER <div class="xl">
+<input type="radio" name="gender" required>MALE
+<input type="radio" name="gender" >FEMALE
+</div></p>
+<p>
+ADDRESS<textarea type="text" name="address" rows="5" cols="30" required placeholder="enter your address"></textarea>
+</p>
+<p> 
+EMAIL<input type="email" name="email" placeholder="xyz@gmail.com" >
+</p>
+<p>
+PINCODE<input type="number" name="pin" required>
+</p>
+<h2> PAYMENT INFORMATION </h2>
+<p> CARD TYPE
+<select name="card_type" id="card_type" required >
+<option value=""> select a card type </option>
+<option value="visa"> visa </option>
+<option value="rupay"> rupay </option>
+<option value="master card"> master card </option>
+</select>
+</p>
+<p>
+CARD NUMBER<input type="number" name="card_number" placeholder="1111-2222-3333-4444" required>
+</p>
+<p>
+EXPIRATION DATE<input type="date" name="expiration_date" required >
+</p>
+<p>
+CVV<input type="password" name="cvv" placeholder="123"required>
+</p>
+<p>
+<input type="reset" name="RESET">
+<input type="submit" value="PAY">
+</p>
+</form>
+</div>
+</body>
+</html>
